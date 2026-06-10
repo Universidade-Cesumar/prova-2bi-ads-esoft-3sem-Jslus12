@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3 align="center"><sub> D E S C R I Ç Ã O &nbsp;</sub></h3>
-  O trabalho referente a este repositório, em resumo, foi nos proposto para que criássemos um sistema de controle de Almoxarifado. Neste dia, 10/06/2026, o projeto na qual eu realizei foi o mais simples possível, apenas uma base.
+  O trabalho referente a este repositório, em resumo, foi nos proposto para que criássemos um sistema de controle de Almoxarifado. Neste dia, 10/06/2026, o projeto na qual eu realizei foi o mais simples possível, apenas uma base. Por enquanto é isso.
 </div>
 
 ---
