@@ -1,1 +1,57 @@
-/* Caso queira utilizar framework como Bootstrap para estilização, pode utilizar. Basta ignoar esse arquivo */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0f1117;
+  color: #e8e9f0;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 { font-size: 1.4rem; margin-bottom: 24px; }
+
+.form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+input {
+  background: #1a1d27;
+  border: 1px solid #2a2d3a;
+  border-radius: 8px;
+  color: #e8e9f0;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  outline: none;
+  flex: 1;
+}
+
+input:focus { border-color: #6c63ff; }
+
+button {
+  background: #6c63ff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+button:hover { background: #574fd6; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #2a2d3a;
+}
+
+th { color: #7c7f96; font-size: 0.75rem; text-transform: uppercase; }
