@@ -36,4 +36,52 @@ tbody.innerHTML = data.map(i => `
     btn.addEventListener('click', () => excluirMaterial(btn.dataset.id));
   });
 }
+async function baixarEstoque(id) {
+  const input = document.querySelector(`input[data-id="${id}"]`);
+  const quantidadeRetirada = Number(input.value);
+  const estoqueAtual = Number(input.dataset.estoque);
 
+  if (!validarRetirada(estoqueAtual, quantidadeRetirada)) {
+    alert('Quantidade inválida: não pode ser zero, negativa ou maior que o estoque.');
+    return;
+  }
+
+  const novaQuantidade = estoqueAtual - quantidadeRetirada;
+
+  await fetch(`${API}/${id}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ quantidade: novaQuantidade })
+  });
+
+  input.value = '';
+  carregarMateriais();
+}
+
+async function excluirMaterial(id) {
+  if (!confirm('Confirmar exclusão?')) return;
+  await fetch(`${API}/${id}`, { method: 'DELETE' });
+  carregarMateriais();
+}
+
+document.getElementById('btn-cadastrar').addEventListener('click', async () => {
+  const nome = document.getElementById('input-nome').value.trim();
+  const quantidade = Number(document.getElementById('input-quantidade').value);
+
+  if (!nome || quantidade <= 0) {
+    alert('Preencha os campos corretamente.');
+    return;
+  }
+
+  await fetch(API, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: nome, quantidade: quantidade })
+  });
+
+  document.getElementById('input-nome').value = '';
+  document.getElementById('input-quantidade').value = '';
+  carregarMateriais();
+});
+
+carregarMateriais();
