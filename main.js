@@ -28,4 +28,12 @@ tbody.innerHTML = data.map(i => `
       <td><button class="btn-excluir" data-id="${i.id}">Excluir</button></td>
     </tr>
 `).join('');
+   document.querySelectorAll('.btn-baixar').forEach(btn => {
+    btn.addEventListener('click', () => baixarEstoque(btn.dataset.id));
+  });
+
+  document.querySelectorAll('.btn-excluir').forEach(btn => {
+    btn.addEventListener('click', () => excluirMaterial(btn.dataset.id));
+  });
+}
 
