@@ -55,3 +55,15 @@ th, td {
 }
 
 th { color: #7c7f96; font-size: 0.75rem; text-transform: uppercase; }
+
+.retirada-group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.retirada-group input {
+  width: 70px;
+  flex: none;
+  padding: 6px 10px;
+}
