@@ -76,3 +76,12 @@ th { color: #7c7f96; font-size: 0.75rem; text-transform: uppercase; }
 }
 
 .btn-baixar:hover { background: #14532f; }
+
+.btn-excluir {
+  background: #5c1a1a;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.btn-excluir:hover { background: #4a1212; }
