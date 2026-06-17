@@ -67,3 +67,10 @@ th { color: #7c7f96; font-size: 0.75rem; text-transform: uppercase; }
   flex: none;
   padding: 6px 10px;
 }
+
+.btn-baixar {
+  background: #1a6640;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
