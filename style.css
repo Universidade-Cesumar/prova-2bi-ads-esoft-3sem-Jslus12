@@ -4,7 +4,7 @@ body {
   background: #0f1117;
   color: #e8e9f0;
   font-family: 'Segoe UI', sans-serif;
-  max-width: 600px;
+  max-width: 650px;
   margin: 40px auto;
   padding: 0 16px;
 }
@@ -17,6 +17,7 @@ h1 { font-size: 1.4rem; margin-bottom: 24px; }
   margin-bottom: 24px;
   flex-wrap: wrap;
 }
+
 input {
   background: #1a1d27;
   border: 1px solid #2a2d3a;
@@ -38,6 +39,7 @@ button {
   cursor: pointer;
   font-weight: 600;
   padding: 10px 20px;
+  font-size: 0.9rem;
 }
 
 button:hover { background: #574fd6; }
