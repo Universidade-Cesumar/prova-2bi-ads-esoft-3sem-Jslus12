@@ -7,6 +7,50 @@
 </head>
 <body>
   <h1>Almoxarifado</h1>
+  <div class="dashboard">
+    <p>Total de itens cadastrados: <span id="total-itens">0</span></p>
+  </div>
+  <input type="text" id="input-busca" placeholder="Pesquisar material..." />
+  <div class="form">
+    <input type="text" id="input-nome" placeholder="Nome do material" />
+    <input type="number" id="input-quantidade" placeholder="Quantidade" min="1" />
+    <button id="btn-cadastrar">Cadastrar</button>
+  </div>
+  <table id="lista-materiais">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Retirar</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr id="linha-modelo" style="display:none">
+        <td></td>
+        <td></td>
+        <td>
+          <div class="retirada-group">
+            <input type="number" id="input-retirada" min="1" placeholder="0" />
+            <button class="btn-baixar">Baixar</button>
+          </div>
+        </td>
+        <td><button class="btn-excluir">Excluir</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Almoxarifado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Almoxarifado</h1>
 
   <div class="dashboard">
     <p>Total de itens cadastrados: <span id="total-itens">0</span></p>
